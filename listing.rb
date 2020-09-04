@@ -1,7 +1,7 @@
 class Listing
     # Listing belongs to Agent
     attr_reader :location
-    attr_accessor :status, :price, :agent
+    attr_accessor :status, :price, :agent, :seller 
 ​
     @@all = []
 ​
@@ -20,4 +20,5 @@ class Listing
         @@all
     end
     
+    seller.listing 
 end
